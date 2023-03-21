@@ -1,0 +1,82 @@
+.m-input{
+    border-color: #bbbbbb;
+    border-width: 1px;
+    border-radius: 4px;
+    border-style: solid;
+    height: 40px;
+    padding: 0 16px;
+    outline: none;
+    box-sizing: border-box;
+    margin-right: 16px;
+}
+.m-input:focus{
+    border-color: #019160;
+}
+.m-input::placeholder{
+    font-size: 11px;
+    color: #bbbbbb;
+}
+.m-input-error{
+    border-color: #FF4747;
+}
+.m-input-error-info{
+    position: relative;
+    height: 40px;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.m-input-error-info .m-error-arrow{
+    position: absolute;
+    background-color: #FF4747;
+    width: 10px;
+    height: 10px;
+    top: 85%;
+    left: 50%;
+    transform: rotate(45deg);
+}
+.m-input-error-info .m-error-message{
+    position: relative;
+    color: #ffff;
+    text-align: center;
+    background-color: #FF4747;
+    border-radius: 4px;
+    padding: 3px 8px;
+    box-sizing: border-box;
+    width: 150px;
+}
+
+.m-input-icon{
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    width: 300px;
+}
+.m-input-icon::placeholder{
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.m-input-icon:focus{
+    border-width: 1px;
+    border-color: #019160;
+    color: #000000;
+}
+.m-input-icon:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.m-input-icon:focus::-moz-placeholder {
+   opacity: 0;
+}
+ 
+.m-input-icon:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+ 
+.m-input-icon:focus:-moz-placeholder {
+   opacity: 0;
+}
+
+.m-input-icon-error{
+    width: 240px;
+}

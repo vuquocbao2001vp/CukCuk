@@ -1,0 +1,59 @@
+@import url(./base/button.css);
+@import url(./base/input.css);
+@import url(./base/table.css);
+@import url(./base/combobox.css);
+@import url(./base/icon.css);
+@import url(./base/toast.css);
+@import url(../assets/font/fontawesome-5.15.1/css/all.css);
+@import url(../assets/font/fontawesome-5.15.1/js/all.min.js);
+@import url(./base/paging.css);
+@import url(./base/popup.css);
+@import url(./base/loading.css);
+@import url(./layout/header.css);
+@import url(./layout/menu.css);
+@import url(./layout/content.css);
+@import url(./popup/formPopup.css);
+@import url(./popup/warningPopup.css);
+
+@font-face {
+    font-family: GoogleSans;
+    src: url(../assets/font/GoogleSans-Black.otf);
+}
+@font-face {
+    font-family: GoogleSans Bold;
+    src: url(../assets/font/GoogleSans-Bold.otf);
+}
+@font-face {
+    font-family: GoogleSans Italic;
+    src: url(../assets/font/GoogleSans-Italic.otf);
+}
+@font-face {
+    font-family: GoogleSans Regular;
+    src: url(../assets/font/GoogleSans-Regular.otf);
+}
+.heading{
+    font-family: GoogleSans Bold;
+    font-size: 24px;
+}
+.title{
+    font-family: GoogleSans Bold;
+    font-size: 20px;
+}
+body{
+    font-family: GoogleSans Regular;
+    font-size: 13px;
+    color: #454545;
+}
+
+.m-row{
+    width: 100%;
+}
+.m-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 226px calc(100% - 226px);
+    grid-template-rows: 49px calc(100vh - 49px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,32 @@
+.m-menu{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    box-sizing: border-box;
+    border-right: 1px solid #bbb;
+}
+.m-menu-item{
+    display: flex;
+    width: 225px;
+    height: 44px;
+    align-items: center;
+    cursor: pointer;
+}
+.m-menu-item:hover{
+    background-color: #e5e5e5;
+}
+.m-menu-item-focus{
+    background-color: #019160;
+    color: #ffffff;
+    pointer-events: none;
+}
+.m-menu-icon{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-left: 16px;
+    margin-right: 10px;
+}

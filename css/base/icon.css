@@ -1,0 +1,44 @@
+.m-icon-search{
+    background-image: url(../../assets/icon/search.png);
+}
+.m-icon-add{
+    background-image: url(../../assets/icon/add.png);
+}
+.m-button-first{
+    background-image: url(../../assets/icon/btn-firstpage.svg);
+}
+.m-button-prev{
+    background-image: url(../../assets/icon/btn-prev-page.svg);
+}
+.m-button-next{
+    background-image: url(../../assets/icon/btn-next-page.svg);
+}
+.m-button-last{
+    background-image: url(../../assets/icon/btn-lastpage.svg);
+}
+.m-icon-dashbord{
+    background-image: url(../../assets/icon/dashboard.png);
+}
+.m-icon-report{
+    background-image: url(../../assets/icon/report.png);
+}
+.m-icon-setting{
+    background-image: url(../../assets/icon/setting.png);
+}
+.m-icon-dic-employee{
+    background-image: url(../../assets/icon/dic-employee.png);
+}
+.m-icon-avatar-default{
+    background-image: url(../../assets/icon/avatar-default.png);
+}
+.m-icon-option{
+    background-image: url(../../assets/icon/option.png);
+}
+.m-button-refresh
+{
+    background-image: url(../../assets/icon/refresh.png);
+}
+.m-icon-16{
+    background-size: 16px 16px;
+    background-position:16px center;
+}

@@ -1,0 +1,103 @@
+.m-content{
+    background-color: #ffffff;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
+}
+.m-table-header{
+    background-color: #ffffff;
+    height: 60px;
+    width: calc(100% - 226px);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 50px;
+    left: 226px;
+    z-index: 5;
+}
+.m-table-button{
+    height: 40px;
+    position: fixed;
+    top: 60px;
+    right: 16px;
+}
+#btnDelete{
+    top: 60px;
+    right: 183px;
+    background-color: #FF4747;
+}
+#btnDelete:hover{
+    background-color: #fb5f5f;
+}
+.m-table-toolbar{
+    background-color: #ffffff;
+    height: 56px;
+    width: calc(100% - 226px);
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    position: fixed;
+    top: 110px;
+    left: 226px;
+    z-index: 5;
+}
+.m-toolbar-right{
+    position: fixed;
+    right: 16px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #BBBBBB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .m-toolbar-right:hover{
+    background-color: #BBBBBB;
+} */
+.m-button-refresh{
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+/* .m-button-refresh:hover{
+    background-color: #BBBBBB;
+} */
+.m-table-content{
+    position: relative;
+    margin-top: 166px;
+    z-index: 0;
+}
+.employee-code-width{
+    width: 80px;
+}
+.full-name-width{
+    width: 140px;
+}
+.gender-width{
+    width: 60px;
+}
+.date-of-birth-width{
+    width: 70px;
+}
+.phone-number-width{
+    width: 100px;
+}
+.email-width{
+    width: 140px;
+}
+.position-name-width{
+    width: 80px;
+}
+.department-name-width{
+    width: 100px;
+}
+.salary-width{
+    width: 120px;
+}
+.work-status-width{
+    width: 150px;
+} 

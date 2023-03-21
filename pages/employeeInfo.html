@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin nhân viên</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="loader"></div>
+    <div id="popupForm" class="m-popup-form">
+        <div class="m-form-header">
+            <h3 style="margin-left: 16px;">THÔNG TIN NHÂN VIÊN</h3>
+            <div id="btnFormClose" class="m-form-header-icon"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="m-form-content">
+            <div class="m-form-avatar">
+                <div class="m-avatar-image"></div>
+                <div class="m-avatar-description">
+                    <span>Vui lòng chọn ảnh có định dạng</span>
+                    <br>
+                    <span>.jpg .jpeg .png .gif</span>
+                </div>
+            </div>
+            <div class="m-form-detail">
+                <span class="m-detail-header">
+                    A. THÔNG TIN CHUNG:
+                    <div class="m-detail-underline"></div>
+                </span>
+                <div id="employeeId" class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Mã nhân viên(</span>
+                        <span style="color: red;">*</span>
+                        <span>)</span>
+                    </div>
+                    <input id="txtEmployeeCode" required type="text" class="m-input m-info-input">
+                    <div class="m-info-error" id="employeeCodeError">* Vui lòng điền đủ thông tin</div>
+                </div>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Họ và tên(</span>
+                        <span style="color: red;">*</span>
+                        <span>)</span>
+                    </div>
+                    <input id="txtFullName" required type="text" class="m-input m-info-input">
+                    <div class="m-info-error" id="employeeCodeError">* Vui lòng điền đủ thông tin</div>
+                </div>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Ngày sinh</span>
+                    </div>
+                    <input id="dtDateOfBirth" type="date" class="m-input m-info-input">
+                </div>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Giới tính</span>
+                    </div>
+                    <div class="m-combobox">
+                        <div class="m-combobox-content" style="height: 30px; width: 200px; background-color: #fff;">
+                            <div style="margin-left: 16px;">Nam</div>
+                            <button class="m-combobox-button m-combobox-button-form"><i class="fas fa-angle-down"></i></button>
+                        </div>
+                        <!-- <div class="m-combobox-data">
+                            <div class="m-combobox-item">Nam</div>
+                            <div class="m-combobox-item">Nữ</div>
+                            <div class="m-combobox-item m-combobox-item--selected">
+                                <div class="m-combobox-icon--selected">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                Trạng thái 3
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Số CMTND/Căn cước(</span>
+                        <span style="color: red;">*</span>
+                        <span>)</span>
+                    </div>
+                    <input id="txtIdentityCard" required type="text" class="m-input m-info-input">
+                    <div class="m-info-error" id="employeeCodeError">* Vui lòng điền đủ thông tin</div>
+                </div>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Ngày cấp</span>
+                    </div>
+                    <input type="date" class="m-input m-info-input">
+                </div>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Nơi cấp</span>
+                    </div>
+                    <input type="text" class="m-input m-info-input">
+                </div>
+                <div class="m-form-item"></div>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Email(</span>
+                        <span style="color: red;">*</span>
+                        <span>)</span>
+                    </div>
+                    <input id="txtEmail" required type="text" class="m-input m-info-input">
+                    <div class="m-info-error" id="employeeCodeError">* Vui lòng điền đủ thông tin</div>
+                    <div id="emailValidateError" id="employeeCodeError">* Vui lòng điền email đúng định dạng</div>
+                </div>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Số điện thoại(</span>
+                        <span style="color: red;">*</span>
+                        <span>)</span>
+                    </div>
+                    <input id="txtPhoneNumber" required type="text" class="m-input m-info-input">
+                </div>
+                <span class="m-detail-header" style="margin-top: 8px;">
+                    A. THÔNG TIN CÔNG VIỆC:
+                    <div class="m-detail-underline"></div>
+                </span>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Vị trí</span>
+                    </div>
+                    <div class="m-combobox">
+                        <div class="m-combobox-content" style="height: 30px; width: 200px; background-color: #fff;">
+                            <div style="margin-left: 16px;">Nam</div>
+                            <button class="m-combobox-button m-combobox-button-form"><i class="fas fa-angle-down"></i></button>
+                        </div>
+                        <!-- <div class="m-combobox-data">
+                            <div class="m-combobox-item">Nam</div>
+                            <div class="m-combobox-item">Nữ</div>
+                            <div class="m-combobox-item m-combobox-item--selected">
+                                <div class="m-combobox-icon--selected">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                Trạng thái 3
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Phòng ban</span>
+                    </div>
+                    <div class="m-combobox">
+                        <div class="m-combobox-content" style="height: 30px; width: 200px; background-color: #fff;">
+                            <div style="margin-left: 16px;">Nam</div>
+                            <button class="m-combobox-button m-combobox-button-form"><i class="fas fa-angle-down"></i></button>
+                        </div>
+                        <!-- <div class="m-combobox-data">
+                            <div class="m-combobox-item">Nam</div>
+                            <div class="m-combobox-item">Nữ</div>
+                            <div class="m-combobox-item m-combobox-item--selected">
+                                <div class="m-combobox-icon--selected">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                Trạng thái 3
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Mã số thuế cá nhân</span>
+                    </div>
+                    <input type="text" class="m-input m-info-input">
+                </div>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Mức lương cơ bản</span>
+                    </div>
+                    <input type="text" class="m-input m-info-input">
+                </div>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Ngày gia nhập công ty</span>
+                    </div>
+                    <input type="text" class="m-input m-info-input">
+                </div>
+                <div class="m-form-item">
+                    <div class="m-info-title">
+                        <span>Phòng ban</span>
+                    </div>
+                    <div class="m-combobox">
+                        <div class="m-combobox-content" style="height: 30px; width: 200px; background-color: #fff;">
+                            <div style="margin-left: 16px;">Nam</div>
+                            <button class="m-combobox-button m-combobox-button-form"><i class="fas fa-angle-down"></i></button>
+                        </div>
+                        <!-- <div class="m-combobox-data">
+                            <div class="m-combobox-item">Nam</div>
+                            <div class="m-combobox-item">Nữ</div>
+                            <div class="m-combobox-item m-combobox-item--selected">
+                                <div class="m-combobox-icon--selected">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                Trạng thái 3
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-form-bottom">
+            <button id="btnCancle" class="m-button">Hủy</button>
+            <button id="btnSave" class="m-button m-icon-16 m-button-icon">
+                <i class="fas fa-save"></i>
+                <span style="display: block; margin-left: 8px;">Lưu</span>
+            </button>
+        </div>
+    </div>
+    
+</body>
+</html>

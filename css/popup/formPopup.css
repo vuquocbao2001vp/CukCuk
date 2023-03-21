@@ -1,0 +1,150 @@
+.m-popup-form{
+    display: none;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 582px;
+    left: calc(226px + (100% - 226px - 582px) / 2);
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    box-sizing: border-box;
+    z-index: 6;
+}
+.m-form-header{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.m-form-header-icon{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    color: #BBBBBB;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+}
+.m-form-header-icon:hover{
+    background-color: #BBBBBB;
+    color: #ffffff;
+}
+.m-form-content{
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    position: relative;
+}
+.m-form-avatar{
+    width: 152px;
+}
+.m-avatar-image{
+    background-image: url(../../assets/img/default-avatar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #BBBBBB;
+    border-radius: 50%;
+    margin-left: 16px;
+}
+.m-avatar-description{
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    margin-left: 16px;
+}
+.m-form-detail{
+    height: 586px;
+    box-sizing: border-box;
+    width: 446px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.m-form-item{
+    width: 200px;
+    height: 62px;
+    margin-right: 16px;
+    margin-top: 8px;
+}
+.m-info-title{
+    height: 16px;
+    margin-bottom: 2px;
+}
+.m-info-input{
+    height: 30px; 
+    width: 200px;
+}
+.m-info-error{
+    display: none;
+    margin-top: 2px;
+    height: 12px;
+    font-size: 10px;
+    color: red;
+}
+#emailValidateError{
+    display: none;
+    margin-top: 2px;
+    height: 12px;
+    font-size: 10px;
+    color: red;
+}
+.m-combobox-button-form{
+    left: 170px;
+    height: 30px;
+    width: 30px;
+}
+.m-form-bottom{
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background-color: #e0dfdf;
+}
+.m-form-bottom button{
+    height: 38px;
+    position: absolute;
+}
+#btnSave{
+    width: 80px;
+    font-size: 12px;
+    padding-left: 18px;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    top: 11px;
+    right: 16px;
+    cursor: pointer;
+}
+#btnCancle{
+    position: absolute;
+    top: 11px;
+    right: 104px;
+    background-color: #e0dfdf;
+    color: #000000;
+    cursor: pointer;
+}
+#btnCancle:hover{
+    background-color: #BBBBBB;
+}
+
+.m-detail-header{
+    height: 16px;
+    width: 100%;
+}
+.m-detail-underline{
+    width: 70px;
+    height:2px;
+    border-radius:4px; 
+    background-color: #019160; 
+}
+.m-combobox-form-content{
+    height: 30px; 
+    width: 200px; 
+    background-color: #fff;
+}

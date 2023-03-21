@@ -1,0 +1,83 @@
+.m-header{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    border-bottom: 1px solid #bbb;
+    z-index: 5;
+}
+.m-header-left{
+    position: relative;
+    height: 49px;
+    width: 226px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-right: 1px solid #bbb;
+}
+.m-header-right{
+    height: 49px;
+    width: calc(100% - 226px);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+.m-header-left-sidebar{
+    background-image: url(../../assets/img/toggle.png);
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    margin-left: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.m-header-left-logo{
+    background-image: url(../../assets/cukcuk-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 150px;
+}
+.m-company{
+    font-size: 18px;
+    font-family: GoogleSan;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: calc(226px + 32px);
+}
+.m-company-name{
+    font-family: GoogleSans Bold;
+}
+.m-company-icon-right{
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 4px;
+}
+.m-user{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 16px;
+}
+.m-user-avatar{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.m-user-icon-right{
+    background-size: cover;
+    height: 16px;
+    width: 16px;
+    margin-left: 16px;
+}
